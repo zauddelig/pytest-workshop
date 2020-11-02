@@ -15,6 +15,7 @@ once done you can run it using:
 pytest test.py
 """
 
+
 def test_assertions():
     """
     Most of the times we will use assertions to run our tests.
