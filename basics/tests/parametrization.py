@@ -33,7 +33,6 @@ def test_multiple_parameters(input, output):
     assert len(input) == output
 
 
-
 @pytest.mark.parametrize(
     'input, output', [
         ['abcd', 4],
