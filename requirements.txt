@@ -1,2 +1,4 @@
 pytest==6.1.2
 ipytest==0.9.1
+pymongo
+mongomock
