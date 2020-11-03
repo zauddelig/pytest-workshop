@@ -7,7 +7,6 @@ Here is what I come up, can you help me find the defects and test this class?
 from mongomock.database import Database
 
 
-
 class Users:
     """ This class will create a database connection. """
     CREATE = "CREATE TABLE users (username text, password text);"
@@ -15,7 +14,7 @@ class Users:
     GET_PASSWORD = "SELECT password FROM users WHERE username=?;"
 
     def __init__(self, database: Database):
-        self.collection =  database.users
+        self.collection = database.users
 
     def _get_password(self, username):
         user = self.collection.find_one({'username': username})
