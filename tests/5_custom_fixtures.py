@@ -82,29 +82,3 @@ def test_cache(monkeypatch_cache: Calculator):
     assert monkeypatch_cache.calculate() == monkeypatch_cache._cache
     monkeypatch_cache._complex_calculation.assert_not_called()
 
-
-# ===========
-# Exercise
-# How we can test this class?
-# what defects does it have?
-# ===========
-
-import sqlite3
-
-
-class Users:
-    """ This class will create a database connection. """
-    CREATE_QUERY = "CREATE TABLE users (username test, password text)"
-
-    def __init__(self, connection: sqlite3.Connection):
-        self.cursor = connection.cursor()
-
-    def _get_password(self, username):
-        self.cursor.execute(
-            "SELECT password WHERE username=? from users", username)
-        return self.cursor.fetchone()
-
-    def authenticate(self, username: str, password: str):
-        return self._get_password(username) == password
-
-

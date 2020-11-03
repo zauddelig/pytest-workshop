@@ -17,6 +17,7 @@
 
 
 -> "Framework that makes building simple and scalable tests easy." <-
+Readme taken from @cm-tm
 
 ---
 
@@ -406,3 +407,4 @@ setup(
   
 \* *monkeypatch* or *mocker* fixture declared in your test function allows you
   to mock objects, e.g. *mocker.patch('requests.request')*. 
+  
