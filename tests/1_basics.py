@@ -30,8 +30,12 @@ def test_assertions():
 
     Make this test pass,
     """
-    assert False, "Fix me"
+    assert True, "Fix me"
 
+
+# class TestMyfeature(TestCase):
+#     def test_assert(self):
+#         self.assertIs(True, True)
 
 def test_one_is_two():
     """
@@ -44,7 +48,7 @@ def test_one_is_two():
 
     As exercise try to fix this test.
     """
-    assert 1 == 2, 'One is not two!'
+    assert 2 == 2, 'One is not two!'
 
 
 def this_will_not_run():

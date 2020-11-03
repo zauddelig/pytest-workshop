@@ -96,7 +96,7 @@ def aways_true(number: int):
     return number * 2 < number ** 2
 
 
-@pytest.mark.parametrize('number', [4, 5, 10, 20, 100])
+@pytest.mark.parametrize('number', [1, 4, 5, 10, 20, 100])
 def test_squared_is_less_than_tripled(number):
     """
     We are cherry picking our test to make so that they pass,

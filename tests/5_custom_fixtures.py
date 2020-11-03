@@ -25,12 +25,12 @@ class Calculator:
         return self._cache
 
 
-@pytest.fixture
+@pytest.fixture()
 def monkeypatch_complex_calculation(monkeypatch):
     """
     Our fixtures can use previously defined fixtures,
     this allows us to create specialized fixtures without reinventing the wheel
-     """
+    """
     value_to_return = 1
     monkeypatch.setattr(
         Calculator, '_complex_calculation', mock.Mock(

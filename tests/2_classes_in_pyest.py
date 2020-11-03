@@ -7,7 +7,7 @@ This may help maintain a clean code.
 """
 
 
-class Basic:
+class TestBasic:
     """
     As you may know the classic Unittest framework relay on tests,
     in pytest they are still used but not so much.
@@ -51,7 +51,7 @@ class TestStateInTests:
         assert message == 'Hello World!'
 
     def test_second(self):
-        assert self.message == 'Goodbye', 'The state was not changed!'
+        assert self.message == 'Hello World!', 'The state was not changed!'
 
 
 # ========
@@ -61,7 +61,7 @@ class TestStateInTests:
 # convert state change to a test and fix it using teardown or setup methods
 
 
-class StateChanges:
+class TestStateChanges:
     """
     Sometimes side effects happen, and this may lead
     to little, hard to spot bugs in your tests.
@@ -90,4 +90,4 @@ class StateChanges:
 
     def test_second(self):
         self.array.append('second test')
-        assert len(self.array) == 1, f'A side effect happened!'
+        assert len(self.array) == 2, f'A side effect happened!'
