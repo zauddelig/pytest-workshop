@@ -8,7 +8,7 @@ import pytest
 
 
 @pytest.mark.parametrize('number', [1, 2])
-def test_squared_is_not_more_than_tripled(number):
+def test_squared_is_less_than_tripled(number):
     """
     In this case we prove that a number multiplied by three is bigger than the
     same number squared.
@@ -16,7 +16,7 @@ def test_squared_is_not_more_than_tripled(number):
     We are cherry picking our test to make so that they pass,
      can you prove otherwise?
     """
-    assert number * 3 > number ** 2, "Impossible!"
+    assert number * 3 > number ** 2, "You found it!"
 
 
 @pytest.mark.parametrize(

@@ -59,12 +59,20 @@ class SometimesStateChanges:
     Sometimes side effects happen, and this may lead
     to little, hard to spot bugs in your tests.
 
-    You can fix this using one of those functions:
+    You can fix this using one of those functions, this will effectively
+     replicate x-unit style testing:
 
-    __init__
+    def setup_method(self):
+        '''
+        This code will run __before__ the test.
+        '''
+        pass
 
-
-    init_test
+    def teardown_method(self):
+        '''
+        This code will run __after__ the test.
+        '''
+        pass
 
     """
     array = []  # array will maintain its state between runs.
