@@ -17,7 +17,8 @@
 
 
 -> "Framework that makes building simple and scalable tests easy." <-
-Readme taken from @cm-tm
+
+Readme taken from https://github.com/cm-tm
 
 ---
 
