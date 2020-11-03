@@ -14,9 +14,8 @@
 -> ██╔═══╝   ╚██╔╝     ██║   ██╔══╝  ╚════██║   ██║    <-
 -> ██║        ██║      ██║   ███████╗███████║   ██║    <-
 -> ╚═╝        ╚═╝      ╚═╝   ╚══════╝╚══════╝   ╚═╝    <-
+≈-> "Framework that makes building simple and scalable tests easy." <-
 ```
--> "Framework that makes building simple and scalable tests easy." <-
-
 Readme taken from https://github.com/cm-tm
 
 ---
