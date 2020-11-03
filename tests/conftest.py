@@ -1,5 +1,5 @@
 """
-Conftests is used to define plugins and fictures that may be used through out
+Conftests is used to define plugins and fixtures that may be used through out
  all tests.
 """
 import pytest
